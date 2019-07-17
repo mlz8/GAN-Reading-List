@@ -7,3 +7,7 @@
   * visualizations of generator - walking in the latent space: small changes on the manifold to show changes to the image generations
   * visualizations of discriminator - guided backprop
   * evaluated on CIFAR-10, SVHN, LSUN, Faces (new dataset, 350K face boxes)
+
+* [Improved Techniques for Training GANs](https://arxiv.org/abs/1606.03498) - Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, Xi Chen. 
+  * feature matching: new objective for the **generator** - feature extracted from intermediate layer of discriminator should match (ie output of generator with real data distibution)
+  * minibatch discrimination: combat collapse of generated features -> allow discriminator to look at multiple data points, 
